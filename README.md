@@ -1,0 +1,2 @@
+# G_05_Mike_26_peter_08_Lab
+Java實習課自選題遊戲
