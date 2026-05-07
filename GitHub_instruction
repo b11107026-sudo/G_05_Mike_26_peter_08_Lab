@@ -1,0 +1,47 @@
+readme.md
+
+function of git 
+git add . 新增任何檔案
+git add *.md 新增任何md檔案
+git commit -m "詳細說明"
+第四行代表有快門
+
+git log :代表誰提交與最新的內容
+按下q可以退出
+
+git log --oneline 是git log的簡化版，可以找出過去的提交紀錄
+
+git diff 代號 --檔案名稱 可以知道改變的細節
+git checkout 還原點 --檔案名稱
+>需要快照，所以仍須提交
+git commit -m "調整的內容"
+
+--上傳檔案到github--
+git remote add origin 網址
+git branch -M main
+--完成上傳--
+//可以從code查看
+
+git push //上傳檔案到github
+
+git clone 網址，可以儲存庫可以變成一個子資料夾
+cd 檔案名稱
+
+git pull 可以把同伴新上傳的檔案下載到本地端
+
+
+git checkout -b branch2 建立分支
+git add . 
+git commit -m "說明"
+git push origin branch2 上傳分支檔案到github
+
+//語法說明
+git checkout -b 
+checkout 切換分支
+-b 建立並切換至新分支
+branch2 新分支名稱
+
+push 推送
+origin 遠端名稱
+branch2 本地名稱(現在所在的分支)
+
