@@ -34,14 +34,17 @@ public class TetrisMain {
         showMenu();
     }
 
-    public void showGame() {
+    public void startNewGame() {
         cardLayout.show(cards, "GAME");
         gamePanel.startGame();
         gamePanel.requestFocusInWindow();
     }
 
     public void showMenu() {
+        gamePanel.stopGame();
+        RecordManager.deleteSavedGame();
         cardLayout.show(cards, "MENU");
+        startPanel.refreshMenu();
         startPanel.requestFocusInWindow();
     }
 }
